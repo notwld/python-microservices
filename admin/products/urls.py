@@ -19,7 +19,7 @@ from django.urls import path
 from products.views import ProductViewSet
 
 urlpatterns = [
-    path('products/', ProductViewSet.as_view({
+    path('products', ProductViewSet.as_view({
         'get': 'list',
         'post': 'create'
     })),

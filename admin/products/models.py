@@ -7,11 +7,11 @@ class Product(models.Model):
     likes = models.PositiveIntegerField()
     img = models.CharField(max_length=300)
 
-    def __str__(self):
-        return self.title
+    def __str__(self) -> str:
+        return str(self.title)
     
 class User(models.Model):
     name = models.CharField(max_length=200)
 
-    def __str__(self):
-        return self.name
+    def __str__(self) -> str:
+        return str(self.name) 
